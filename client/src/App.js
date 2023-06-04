@@ -43,16 +43,37 @@ function App() {
           </div>
         </div>
       ) : (
-        <>
-          <input type="text" onChange={(e) => setMessage(e.target.value)} />
-          <button onClick={() => sendPrivateMessage(message)}>Send a message</button>
-          {receivedMessages.map((e) => {
-            return <li key={e}>{e}</li>
-          })}
-        </>
+        <div className="chat__window">
+          <div className="chat__container">
+            <h1>Chat System</h1>
+            <hr />
+            <div className="chats">
+              <div className="people">
+                <div className='person'>
+                  <h1>Tom</h1>
+                </div>
+                <div className='person'>
+                  <h1>Erik</h1>
+                </div><div className='person'>
+                  <h1>Ivan</h1>
+                </div><div className='person'>
+                  <h1>Bogdan</h1>
+                </div><div className='person'>
+                  <h1>Tom</h1>
+                </div>
+              </div>
+              <div className="messages"></div>
+            </div>
+          </div>
+        </div>
       )}
     </>
   );
 }
+{/* <input type="text" onChange={(e) => setMessage(e.target.value)} />
+<button onClick={() => sendPrivateMessage(message)}>Send a message</button>
+{receivedMessages.map((e) => {
+  return <li key={e}>{e}</li>
+})} */}
 
 export default App;
