@@ -25,8 +25,7 @@ const activeUsers = new Map();
 io.on('connection', (socket) => {
   console.log('A user connected');
   activeUsers.set(socket.id, socket.cookie);
-  console.log(activeUsers)
-  console.log(Array.from(activeUsers.keys())[0])
+
   const sender = Array.from(activeUsers.keys())[0];
   socket.on('privateMessage', ({content}) => {
     console.log('Received private message:', content);  
