@@ -121,11 +121,26 @@
 }
 .messages__container .top__message__container {
   flex-basis: 7%;
-  background-color: #212122;
-  background-color: red;
+  background-color: #4f4f50;
 
 }
 .messages__container .bottom__message__container {
   flex-basis: 93%;
   background-color: #212122
+}
+.top__message__container .person img{
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  border-radius: 50px;
+}
+.top__message__container .person h1{ 
+  margin: 0px;
+  color: white;
+  font-style: italic;
+  margin-left: 15px;
+}
+.top__message__container .person{
+  display: flex;
+  margin-top: 7px;
 }

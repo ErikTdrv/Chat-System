@@ -105,13 +105,18 @@ function App() {
                   <img src="/simona.jpg" />
                   <h1>Simona</h1>
                 </div>
-                
-                
+
+
               </div>
             </div>
           </div>
           <div className="messages__container">
-            <div className="top__message__container"></div>
+            <div className="top__message__container">
+              <div className="person">
+                <img src="/simona.jpg" />
+                <h1>Simona</h1>
+              </div>
+            </div>
             <div className="bottom__message__container"></div>
           </div>
         </div>
