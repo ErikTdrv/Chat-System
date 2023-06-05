@@ -44,26 +44,75 @@ function App() {
         </div>
       ) : (
         <div className="chat__window">
-          <div className="chat__container">
-            <h1>Chat System</h1>
+          <div className="people__container">
+            <div className="others">
+              <div className="others__item">
+                <h1><i class="fa-solid fa-user-group"></i>Friends</h1>
+              </div>
+            </div>
             <hr />
-            <div className="chats">
+            <div className="people__wrapper">
               <div className="people">
                 <div className='person'>
-                  <h1>Tom</h1>
+                  <img src="/profilepicture.jpg" />
+                  <h1>Erik</h1>
                 </div>
                 <div className='person'>
-                  <h1>Erik</h1>
-                </div><div className='person'>
-                  <h1>Ivan</h1>
-                </div><div className='person'>
-                  <h1>Bogdan</h1>
-                </div><div className='person'>
-                  <h1>Tom</h1>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
                 </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                <div className='person'>
+                  <img src="/simona.jpg" />
+                  <h1>Simona</h1>
+                </div>
+                
+                
               </div>
-              <div className="messages"></div>
             </div>
+          </div>
+          <div className="messages__container">
+            <div className="top__message__container"></div>
+            <div className="bottom__message__container"></div>
           </div>
         </div>
       )}
