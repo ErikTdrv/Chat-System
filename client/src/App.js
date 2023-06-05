@@ -117,7 +117,17 @@ function App() {
                 <h1>Simona</h1>
               </div>
             </div>
-            <div className="bottom__message__container"></div>
+            <div className="bottom__message__container">
+              <div className="input">
+                <input type="text" />
+                <div className="icon__sender">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div className="emoji__add">
+                  <i class="fa-solid fa-face-smile"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}

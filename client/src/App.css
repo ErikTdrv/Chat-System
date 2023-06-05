@@ -2,10 +2,11 @@
   width: 100%;
   height: 100vh;
   background-color: #4b5058;
-  
+
   /* background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); */
-  
+
 }
+
 .username__verifier {
   position: absolute;
   top: 50%;
@@ -20,16 +21,19 @@
   align-items: center;
 
 }
+
 .username__verifier input {
   height: 27px;
   border-radius: 20px;
   text-align: center;
   border: none;
 }
+
 .username__verifier div label {
   font-weight: bold;
   margin-right: 10px;
 }
+
 .username__verifier button {
   padding: 6px 30px;
   border-radius: 20px;
@@ -38,36 +42,44 @@
   color: white;
   margin-left: 25px;
 }
+
 .username__verifier button:hover {
   background-color: rgb(0, 0, 0);
 }
+
 .chat__window {
   background-color: #343638;
   height: 100vh;
   width: 100%;
   display: flex;
 }
+
 .people__container {
   flex-basis: 17%;
   display: flex;
   flex-direction: column;
 }
+
 .people__container hr {
   width: 100%;
 }
+
 .people__wrapper {
   flex-grow: 1;
   overflow-y: auto;
 }
-.messages__container{
+
+.messages__container {
   flex-basis: 83%;
   background-color: rebeccapurple;
 }
+
 .people__container .others {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .people__container .others .others__item {
   width: 95%;
   text-align: center;
@@ -76,71 +88,142 @@
   border-radius: 10px;
   margin-top: 5px;
 }
-.people__container .others h1{
+
+.people__container .others h1 {
   margin-top: 13px;
   font-size: 16px;
   color: #cacbcc;
 }
-.people__container .others i{
+
+.people__container .others i {
   margin-right: 10px;
 }
+
 .people__container .others .others__item:hover {
   background-color: #5e5e5f;
 }
+
 .people__container .people {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .people__container .people .person {
   display: flex;
   align-items: center;
   width: 95%;
   height: 60px;
 }
-.people__container .people .person:hover{
+
+.people__container .people .person:hover {
   background-color: #5e5e5f;
   border-radius: 10px;
 }
-.people__container .people .person h1{
+
+.people__container .people .person h1 {
   margin: 0px;
   font-size: 25px;
   font-weight: bold;
   color: white;
   margin-left: 20px;
 }
-.people__container .people img{
+
+.people__container .people img {
   width: 50px;
   height: 50px;
   border-radius: 50px;
   margin-left: 10px;
 }
+
 .messages__container {
   display: flex;
   flex-direction: column;
 }
+
 .messages__container .top__message__container {
   flex-basis: 7%;
   background-color: #4f4f50;
 
 }
+
 .messages__container .bottom__message__container {
   flex-basis: 93%;
   background-color: #212122
 }
-.top__message__container .person img{
+
+.top__message__container .person img {
   width: 50px;
   height: 50px;
   margin-left: 15px;
   border-radius: 50px;
 }
-.top__message__container .person h1{ 
+
+.top__message__container .person h1 {
   margin: 0px;
   color: white;
   font-style: italic;
   margin-left: 15px;
 }
-.top__message__container .person{
+
+.top__message__container .person {
   display: flex;
   margin-top: 7px;
+}
+
+.bottom__message__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+
+}
+
+.bottom__message__container .input {
+  /* padding: 10px 80%; */
+  width: 80%;
+  height: 6%;
+  border-radius: 20px;
+  position: relative;
+}
+
+.bottom__message__container .input input {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  height: 80%;
+  background-color: #4f4f50;
+}
+.bottom__message__container .input input:focus {
+  border: 0px solid;
+  outline: none;
+} 
+.bottom__message__container .icon__sender{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+}
+.bottom__message__container .icon__sender i, .bottom__message__container .emoji__add i{
+  color: white;
+  text-align: center;
+}
+.bottom__message__container .icon__sender:hover, .bottom__message__container .emoji__add:hover {
+  background-color: #727272;
+}
+.bottom__message__container .emoji__add {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  border-radius: 10px;
 }
