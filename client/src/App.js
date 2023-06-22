@@ -20,6 +20,7 @@ function App() {
   }, []);
   useEffect(() => {
     socket.on("privateMessage", ({ from, content }) => {
+      console.log(from, content)
       setReceivedMessages((prevMessages) => [...prevMessages, content]);
     });
 
@@ -27,8 +28,8 @@ function App() {
       socket.off("privateMessage");
     };
   }, []);
-  function sendPrivateMessage(content) {
-    socket.emit("privateMessage", ({ content }))
+  function sendPrivateMessage() {
+    socket.emit("privateMessage", ({ content: message }))
   }
   return (
     <>
@@ -119,8 +120,8 @@ function App() {
             </div>
             <div className="bottom__message__container">
               <div className="input">
-                <input type="text" />
-                <div className="icon__sender">
+                <input type="text" onChange={(e) => setMessage(e.target.value)} />
+                <div className="icon__sender" onClick={sendPrivateMessage}>
                   <i class="fa-solid fa-paper-plane"></i>
                 </div>
                 <div className="emoji__add">
