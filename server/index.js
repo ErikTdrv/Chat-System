@@ -43,41 +43,6 @@ io.on('connection', (socket) => {
   })
 })
 
-// io.on('connection', (socket) => {
-//   console.log('a user connected');
-
-//   // Example event: 'chat message'
-//   socket.on('chat message', (message) => {
-//     console.log('Received message:', message);
-//     console.log(socket.id)
-//     const users = [];
-//     for (let [id, socket] of io.of("/").sockets) {
-//       users.push({
-//         userID: id,
-//         cookie: socket.cookie,
-//       });
-
-//     }
-//     socket.emit("users", users);
-//     // Broadcast the message to all connected clients
-//     io.emit('chat message', message);
-//   });
-//   socket.on("private message", ({ content }) => {
-//     console.log(content, socket.id);
-//     const recipientSocket = io.sockets.sockets.get(socket.id);
-//     if (recipientSocket) {
-//       recipientSocket.emit("private message", {
-//         content,
-//         from: socket.id,
-//       });
-//     } else {
-//       console.log("Recipient socket not found");
-//     }
-//   });
-//   socket.on('disconnect', () => {
-//     console.log('user disconnected');
-//   });
-// });
 
 server.listen(3001, () => {
   console.log('Server listening on port 3001');
